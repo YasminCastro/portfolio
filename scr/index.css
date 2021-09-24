@@ -15,16 +15,34 @@ body {
 .container {
   background: #ecf4ff;
   margin: 64px;
-  max-width: 700px;
+  width: 1000px;
   border-radius: 30px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
   color: #1c1c1c;
   padding: 64px;
 }
 
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
 .perfil {
   display: flex;
-  align-items: center;
+}
+
+.cabecalho button {
+  border-radius: 100px;
+  border: 2px solid #0e1d2f;
+  align-self: flex-end;
+  width: 150px;
+  height: 40px;
+  background-color: #ecf4ff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0e1d2f;
+  padding: 8px 16px;
+  cursor: pointer;
 }
 
 .perfil-foto {
@@ -77,6 +95,7 @@ body {
   justify-items: center;
   padding: 1.1rem 1rem;
   border-radius: 20px;
+  width: 700px;
 }
 
 .projetos a {
@@ -98,4 +117,34 @@ body {
 ul,
 li {
   list-style: none;
+}
+
+.conquistas-box {
+  margin-top: 20px;
+  background-color: rgba(192, 192, 192, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  display: flex;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  height: 1000;
+}
+
+.icones-conquistas {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  margin-left: 25px;
+}
+.icones-conquistas:hover {
+  width: 110px;
+  height: 110px;
+}
+
+.dark .container {
+  background: #333439;
 }
