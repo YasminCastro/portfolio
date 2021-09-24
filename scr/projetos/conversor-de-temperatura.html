@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="conversor-de-temperatura.css">
+    <script src="conversor-de-temperatura.js"></script>
+    <link
+      rel="icon"
+      href="https://img-premium.flaticon.com/png/512/5570/premium/5570629.png?token=exp=1632416265~hmac=c5d875f7b06cf9c8c4b303e4104bb0dc"
+    />
+    <title>Conversor de Temperatura</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="page-title">
+          Conversor de temperatura
+        </h1>
+        <p class="page-subtitle">
+          Conversor de temperaturas entre Farenheit, Kelvin e Celsius.
+        </p>
+        
+        <label for="temperaturaCelsius">Insira a temperatura em Celsius</label><br>
+        <input type="number" id="valor" size="2" /><br>
+        <button type="submit" onclick="ConverterCelsiusParaKelvin()">Converter para Kelvin</button>
+        <button type="submit" onclick="ConverterCelsiusParaFarenheit()">Converter para Farenheit</button>
+        <br>
+        <div id="valorConvertidoCelsius"></div>
+        <br>
+        <label for="temperaturaFarenheit">Insira a temperatura em Farenheit</label><br>
+        <input type="number" id="valor" size="2" /><br>
+        <button type="submit" onclick="ConverterFarenheitParaKelvin()">Converter para Kelvin</button>
+        <button type="submit" onclick="ConverterFarenheitParaCelsius()">Converter para Celsius</button>
+        <br>
+        <div id="valorConvertidoFarenheit"></div>
+        <br>
+        <label for="temperaturaKelvin">Insira a temperatura em Kelvin</label><br>
+        <input type="number" id="valor" size="2" /><br>
+        <button type="submit" onclick="ConverterKelvinParaFarenheit()">Converter para Farenheit</button>
+        <button type="submit" onclick="ConverterKelvinParaCelsius()">Converter para Celsius</button>
+        <br>
+        <div id="valorConvertidoKelvin"></div>
+        <br>
+      </div>
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </body>
+</html>

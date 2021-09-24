@@ -1,0 +1,71 @@
+* {
+  text-align: center;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+  background-image: url("https://wallpapercave.com/wp/wp2729921.gif");
+  background-color: black;
+  background-size: 3000px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #918fbf;
+  margin: 0 0 5px;
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  text-shadow: 1px 1px white;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+table {
+  border: 2px hidden #b4d97e;
+  border-collapse: collapse;
+}
+
+th,
+tr,
+td {
+  border: solid 1px black;
+  color: white;
+  font-size: 20px;
+}
+
+img {
+  width: 100px;
+}
+
+.box {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  background-color: #b4d97e;
+  font-family: "Oswald", sans-serif;
+  border-radius: 25px;
+}
+
+.botoes {
+  border-radius: 5px;
+}

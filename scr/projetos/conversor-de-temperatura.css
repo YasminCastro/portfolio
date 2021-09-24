@@ -1,0 +1,71 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 200px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/808/808923.png");
+  background-color: #1f2226;
+  background-size: 15vh;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #d6231e;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #d6231e;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+input {
+  margin: 12px;
+  padding: 6px;
+  border-radius: 5px;
+  color: #fff4e0;
+}
+
+label {
+  color: white;
+}
+
+button {
+  margin-top: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+#valorConvertidoCelsius {
+  color: #2e94b5;
+}
+
+#valorConvertidoFarenheit {
+  color: #2e94b5;
+}
+
+#valorConvertidoKelvin {
+  color: #2e94b5;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela de Classificação</title>
+    <script src="tabela-de-classificacao.js"></script>
+    <link rel="stylesheet" href="tabela-de-classificacao.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://img-premium.flaticon.com/png/512/5570/premium/5570629.png?token=exp=1632416265~hmac=c5d875f7b06cf9c8c4b303e4104bb0dc"
+    />
+  </head>
+  <body>
+    <h2 class="page-title">Tabela de classificação</h2>
+
+    <div>
+      <input
+        type="text"
+        name="novoJogador"
+        id="nomeNovoJogador"
+        placeholder="Insira o nome do jogador"
+      />
+      <input
+        type="text"
+        name="fotoJogador"
+        id="fotoJogador"
+        placeholder="Insira a url da foto"
+      />
+      <button
+        onclick="adicionarNovoJogador(jogadores)"
+        name="novoJogador"
+        id="novoJogador"
+      >
+        Adicionar
+      </button>
+    </div>
+    <br />
+    <table style="width: 100%" class="box">
+      <thead>
+        <tr>
+          <th>Foto</th>
+          <th>Nome</th>
+          <th>Vitórias</th>
+          <th>Empates</th>
+          <th>Derrotas</th>
+          <th>Pontos</th>
+          <th colspan="4">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaJogadores"></tbody>
+    </table>
+    <br />
+    <div>
+      <button class="botoes" onclick="resetarPontos(jogadores)">
+        Resetar pontos
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&family=Quicksand:wght@300&family=Ubuntu:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="super-trunfo.css" />
+    <script defer async src="super-trunfo.js"></script>
+    <link
+      rel="icon"
+      href="https://img-premium.flaticon.com/png/512/5570/premium/5570629.png?token=exp=1632416265~hmac=c5d875f7b06cf9c8c4b303e4104bb0dc"
+    />
+    <title>Super Trunfo</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="page-title">Super Trunfo para TRANSEX!</h1>
+
+      <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+
+      <form id="form">
+        <h2 class="atributo">Escolha o seu atributo</h2>
+        <p id="pontos"></p>
+        <div id="cartas">
+          <div id="carta-jogador"></div>
+          <div id="carta-maquina"></div>
+        </div>
+        <div class="opcoes" id="opcoes"></div>
+        <br />
+        <div id="resultado"></div>
+        <br />
+        <button type="button" id="btnJogar" onclick="jogar()" disabled="false">
+          Jogar
+        </button>
+        <button
+          type="button"
+          id="btnProxima"
+          onclick="proximaRodada()"
+          disabled="false"
+        >
+          Próxima Rodada
+        </button>
+        <br />
+        <button type="button" id="btnReiniciar" onclick="reiniciarJogo()">
+          Reiniciar jogo
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

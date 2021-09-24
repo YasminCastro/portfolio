@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moedas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://img-premium.flaticon.com/png/512/5570/premium/5570629.png?token=exp=1632416265~hmac=c5d875f7b06cf9c8c4b303e4104bb0dc"
+    />
+    <script src="conversor-de-moedas.js"></script>
+    <link rel="stylesheet" href="conversor-de-moedas.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">Conversor de moedas</h1>
+      <img
+        src="https://images.vexels.com/media/users/3/145759/isolated/lists/1ed942cd576a9f4ae65a8e1d85b71b60-maco-de-dinheiro.png"
+        class="page-logo"
+        alt="Pilha de dinheiro"
+      />
+      <br /><br />
+      <div>
+        <label for="moeda" class="subTituloMoeda">De: </label>
+        <label for="moeda" class="subTituloMoeda">Para: </label>
+        <br />
+        <div>
+          <select name="select" id="deMoedaLocal">
+            <option value="nada" selected disabled>
+              Selecione uma moeda...
+            </option>
+            <option value="deReal">Real</option>
+            <option value="deDolar">Dolar</option>
+            <option value="deEuro">Euro</option>
+            <option value="deBitCoin">BitCoin</option>
+          </select>
+
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/261/261906.png"
+            class="logo-setas"
+            alt="Setas de direção"
+          />
+
+          <select name="select" id="paraMoedaEstrangeira">
+            <option value="nada" hidden>Selecione uma moeda...</option>
+            <option value="paraReal">Real</option>
+            <option value="paraDolar">Dolar</option>
+            <option value="paraEuro">Euro</option>
+            <option value="paraBitCoin">BitCoin</option>
+          </select>
+        </div>
+
+        <br />
+        <label for="moeda">Digite o valor desejado </label>
+        <br />
+        <input type="number" id="valor" size="2" />
+        <button type="submit" onclick="Converter()">Converter</button>
+        <p id="textoDeAviso"></p>
+        <p id="valorConvertido"></p>
+      </div>
+      <br />
+    </div>
+  </body>
+</html>
