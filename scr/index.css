@@ -93,7 +93,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  padding: 1.1rem 1rem;
+  padding: 32px;
   border-radius: 20px;
   width: 700px;
 }
@@ -128,6 +128,11 @@ li {
   display: flex;
 }
 
+.conquistas h3 {
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+
 .boxes {
   display: flex;
   justify-content: space-around;
@@ -145,6 +150,43 @@ li {
   height: 110px;
 }
 
+.dark {
+  background: rgb(50, 101, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(50, 101, 164, 1) 0%,
+    rgba(82, 12, 84, 1) 100%
+  );
+}
+
 .dark .container {
   background: #333439;
+  color: #f7f7f7;
+}
+
+.dark p {
+  color: #b0a9a9;
+}
+
+.dark .conquistas-box {
+  background-color: #686b75;
+}
+
+.dark .projetos {
+  background-color: #686b75;
+}
+
+.dark a {
+  color: #f7f7f7;
+}
+
+.dark .projetos a:hover {
+  color: #99c7ff;
+  font-size: 17px;
+}
+
+.dark .cabecalho button {
+  background: #1c1c1c;
+  color: #f7f7f7;
+  border: 2px solid #f7f7f7;
 }
